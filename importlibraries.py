@@ -77,5 +77,12 @@ scoring = 'accuracy'
 seed = 7
 scoring = 'accuracy'
 
+
+ 
+# Test options and evaluation metric
+seed = 7
+scoring = 'accuracy'
+
+
 print("END")
 
