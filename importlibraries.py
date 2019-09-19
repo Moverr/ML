@@ -23,3 +23,39 @@ names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
 dataset = pandas.read_csv(url, names=names)
 
 print("Importing Data in Pythong")
+
+#shape of the dataset
+print(dataset.shape)
+
+#head of the dataset
+print(dataset.head(20))
+
+#Descriptions
+print(dataset.describe())
+
+
+#Descriptions
+#print(dataset["sepal-length"].describe())
+
+
+# class distribution
+# print(dataset.groupby('class').size())
+
+
+
+# box and whisker plots
+# dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+# plt.show()
+
+
+# scatter matrix
+# scatter_matrix(dataset)
+# plt.show()
+
+
+# histograms
+# dataset.hist()
+# plt.show()
+
+print("END")
+
