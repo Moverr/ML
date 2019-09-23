@@ -146,6 +146,7 @@ def data_scientists_who_like(target_interest):
 
 from collections import defaultdict
 
+# user ids by interest 
 user_ids_by_interest = defaultdict(list)
 
 for user_id, interest in interests:
@@ -153,3 +154,10 @@ for user_id, interest in interests:
 
 print(user_ids_by_interest)
 
+
+# interest by user id 
+interests_by_user_id = defaultdict(list)
+for interest,user_id in interests:
+    interests_by_user_id[user_id].append(interest)
+
+print(interests_by_user_id)
