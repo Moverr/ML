@@ -141,4 +141,15 @@ def data_scientists_who_like(target_interest):
 
 # creating a loop and returning it 
 
-print(data_scientists_who_like("Big Data"))
+# print(data_scientists_who_like("Big Data"))
+
+
+from collections import defaultdict
+
+user_ids_by_interest = defaultdict(list)
+
+for user_id, interest in interests:
+    user_ids_by_interest[interest].append(user_id)
+
+print(user_ids_by_interest)
+
