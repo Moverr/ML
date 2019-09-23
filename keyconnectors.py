@@ -193,3 +193,15 @@ for salary,tenure in salaries_and_tenures:
 print("-------------------------------------------------------------")
 print(salary_by_tenure)
 
+# Average salary by tenure 
+
+average_salary_by_tenure = {
+    tenure:sum(salaries)/ len(salaries)
+    for tenure,salaries in salary_by_tenure.items()
+}
+
+print("---------------------------------------------------------------")
+print(average_salary_by_tenure)
+
+
+
