@@ -1,7 +1,5 @@
 from matplotlib import pyplot as plt
- 
-
- from collections import Counter
+from collections import Counter
 grades = [83, 95, 91, 87, 70, 0, 85, 82, 100, 67, 73, 77, 0]
 
 # Bucket grades by decile, but put 100 in with the 90s
