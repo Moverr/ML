@@ -57,4 +57,12 @@ num_friends_by_id.sort(
 
 print(num_friends_by_id)
 
+# Suggest Friends of a Friend  Connection
+def foaf_ids_bad(user):
+    return[foaf_id 
+                for friend_id in friendships[user["id"]]
+                for foaf_id in friendships[friend_id]]
+
+
+
 #print(users)
