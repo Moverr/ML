@@ -139,3 +139,6 @@ def data_scientists_who_like(target_interest):
     return [user_id for user_id, user_interest in interests
             if user_interest == target_interest]
 
+# creating a loop and returning it 
+
+print(data_scientists_who_like("Big Data"))
