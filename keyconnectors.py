@@ -157,7 +157,8 @@ print(user_ids_by_interest)
 
 # interest by user id 
 interests_by_user_id = defaultdict(list)
-for interest,user_id in interests:
+for user_id,interest in interests:
     interests_by_user_id[user_id].append(interest)
 
+print("---------------------------------------------")
 print(interests_by_user_id)
