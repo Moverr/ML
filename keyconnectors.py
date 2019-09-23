@@ -64,5 +64,8 @@ def foaf_ids_bad(user):
                 for foaf_id in friendships[friend_id]]
 
 
-
+print(users[0])
+foaf = foaf_ids_bad(users[0])
+print(foaf)
+ 
 #print(users)
