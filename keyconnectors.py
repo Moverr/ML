@@ -160,5 +160,5 @@ interests_by_user_id = defaultdict(list)
 for user_id,interest in interests:
     interests_by_user_id[user_id].append(interest)
 
-print("---------------------------------------------")
+print("-------------------------------------------------------------------------")
 print(interests_by_user_id)
