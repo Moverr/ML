@@ -221,3 +221,11 @@ for salary,tenure in salaries_and_tenures:
 print("--------------------------------------------")
 print(salary_by_tenure_bucket)
 
+# average salay in every bucket tenure 
+
+average_salary_by_bucket = {
+    tenure_bucket: sum(salaries) /len(salaries)
+    for tenure_bucket,salaries in salary_by_tenure_bucket.items()
+}
+
+
