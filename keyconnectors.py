@@ -208,6 +208,9 @@ def tenure_bucket(tenure):
     if tenure < 2:
         return "lass than two"
     elif tenure < 5:
-        return 
+        return "Between two and five"
+    else:
+        return "More than five"
 
+    
 
