@@ -214,9 +214,10 @@ def tenure_bucket(tenure):
 
 
 salary_by_tenure_bucket = defaultdict(list)
-for salary,tenure in salary_by_tenure:
+for salary,tenure in salaries_and_tenures:
     bucket = tenure_bucket(tenure)
     salary_by_tenure_bucket[bucket].append(salary)
 
 print("--------------------------------------------")
+print(salary_by_tenure_bucket)
 
