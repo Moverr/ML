@@ -162,3 +162,12 @@ for user_id,interest in interests:
 
 print("-------------------------------------------------------------------------")
 print(interests_by_user_id)
+
+print("---------------------------------------------------------------------------")
+def most_common_interests_with(user):
+    return Counter(
+        interested_user_id
+        for interest in interests_by_user_id[user["id"]]
+        for interested_user_id in user_ids_by_interest[interest]
+        if interests_by_user_id != user["id"]
+    )
