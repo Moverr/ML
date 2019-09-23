@@ -212,5 +212,11 @@ def tenure_bucket(tenure):
     else:
         return "More than five"
 
-    
+
+salary_by_tenure_bucket = defaultdict(list)
+for salary,tenure in salary_by_tenure:
+    bucket = tenure_bucket(tenure)
+    salary_by_tenure_bucket[bucket].append(salary)
+
+print("--------------------------------------------")
 
