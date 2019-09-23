@@ -255,6 +255,8 @@ interests = [
 words_and_counts = Counter(word for user, interest in interests
                                 for word in interest.lower().split() )
 
+print("---------------------------------------------------------")
+print(words_and_counts)
  
 # print(words) 
 
