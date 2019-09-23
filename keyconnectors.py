@@ -204,4 +204,10 @@ print("---------------------------------------------------------------")
 print(average_salary_by_tenure)
 
 
+def tenure_bucket(tenure):
+    if tenure < 2:
+        return "lass than two"
+    elif tenure < 5:
+        return 
+
 
