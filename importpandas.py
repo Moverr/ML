@@ -7,7 +7,14 @@ dataset = pandas.read_csv(url, names=names)
 
 
 
-print(dataset)
-# description  = dataset.descdribe()
+
+
+simple_data = dataset.head(5)
+print(simple_data)
+
+# this is a statists formula for finding and cleaning data in the simplest ways possible
+description  = simple_data.describe()
+print("-----------------------------------")
+print(description)
 
 # print(descriptiondata.head(10))
