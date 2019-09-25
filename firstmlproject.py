@@ -1,7 +1,6 @@
-import sklearn
-import tree
+from  sklearn import tree
 
-
+#Need to understand sklean package , what it can do and explore a few items
 features = [
 [140,0],
 [130,0],
