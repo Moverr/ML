@@ -1,9 +1,11 @@
 import sklearn
 
+
+
 features = [
-[140,"Smooth"],
-[130,"Smooth"],
-[150,"Bumpy"],
-[170,"Bumpy"] 
+[140,0],
+[130,0],
+[150,1],
+[170,1] 
 ]
-labels = ["Apple","Apple","Orange","Orange"]
+labels = [0,0,1,1]
