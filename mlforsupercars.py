@@ -44,7 +44,7 @@ filled=True, rounded=True,impurity=False
 )
 
  
-print(dot_data.getvalue())
+# print(dot_data.getvalue())
 graph = pydot.graph_from_dot_data(dot_data.getvalue())
 
 result_extp = { }
@@ -53,5 +53,5 @@ result_extp[2] = "Mini Van"
  
 
 
-graph.write_pdf("mover.pdf")
+graph.writepdf("mover.pdf")
 
