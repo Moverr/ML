@@ -14,6 +14,15 @@ labels = [
 ]
 
 
+# Decision Tree Classifier 
+clf = tree.DecisionTreeClassifier()
+
+# Find Pattens in Data FIT 
+clf.fit(features,labels)
+
+
+
+
 result_extp = { }
 result_extp[1] = "Super Car"
 result_extp[2] = "Mini Van"
