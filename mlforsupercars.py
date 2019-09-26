@@ -19,7 +19,7 @@ clf = tree.DecisionTreeClassifier()
 # Find Pattens in Data FIT 
 clf.fit(features,labels)
 
-result = (clf.predict([[1040,5]]))
+result = (clf.predict([[200,20]]))
 
 
 result_extp = { }
