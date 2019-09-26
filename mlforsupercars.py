@@ -1,5 +1,4 @@
-import sklearn
-
+ from sklearn import tree
 
 # Horse Power and Seating capacity 
 features = [
@@ -18,5 +17,9 @@ labels = [
 result_extp = { }
 result_extp[1] = "Super Car"
 result_extp[2] = "Mini Van"
+
+clf = tree.DecisionTreeClassifier()
+
+
 
 
