@@ -1,6 +1,7 @@
 import sklearn
 
 
+# Horse Power and Seating capacity 
 features = [
     [300,2],
     [450,2],
@@ -8,6 +9,14 @@ features = [
     [150,9] 
 ]
 
+# change supercar for 1 and minivan for 2
 labels = [
-    ["sportscar","sportscar","minvan","minvan"] 
+    [1,1,2,2] 
 ]
+
+
+result_extp = { }
+result_extp[1] = "Super Car"
+result_extp[2] = "Mini Van"
+
+
