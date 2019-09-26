@@ -39,7 +39,7 @@ dot_data = StringIO()
 tree.export_graphviz(clf,out_file=dot_data,
 feature_names=feature_names,
 class_names=["Super Car","Mini Van"],
-filled=True, rounded=True,inpurity=False
+filled=True, rounded=True,impurity=False
 )
 
 
