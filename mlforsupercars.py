@@ -43,6 +43,7 @@ filled=True, rounded=True,impurity=False
 )
 
 
+graph = pydot. graph_from_dot_data(dot_data.getValue())
 
 result_extp = { }
 result_extp[1] = "Super Car"
