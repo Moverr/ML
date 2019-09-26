@@ -19,7 +19,7 @@ clf = tree.DecisionTreeClassifier()
 # Find Pattens in Data FIT 
 clf.fit(features,labels)
 
-result = (clf.predict([[200,20]]))
+result = (clf.predict([[250,2]]))
 
 
 result_extp = { }
@@ -29,6 +29,10 @@ result_extp[2] = "Min Van"
 
 # print (result)
 print(result_extp[result[0]])
+
+
+from sklearn.externals.six import StringIO
+import pydot
 
 
 
