@@ -1,4 +1,4 @@
- from sklearn import tree
+from sklearn import tree
 
 # Horse Power and Seating capacity 
 features = [
