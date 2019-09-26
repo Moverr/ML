@@ -1,4 +1,7 @@
 from sklearn import tree
+from sklearn.tree import export_graphviz
+from sklearn.externals.six import StringIO  
+import pydot
 
 feature_names = ["Horse Power","# Seats"]
 # Horse Power and Seating capacity 
@@ -31,12 +34,9 @@ result_extp[2] = "Min Van"
 # print (result)
 print(result_extp[result[0]])
 
+ 
 
-from sklearn.externals.six import StringIO
-import pydot
-import cStringIO
-
-dot_data = cStringIO()
+dot_data = StringIO()
 tree.export_graphviz(clf,out_file=dot_data,
 feature_names=feature_names,
 class_names=["Super Car","Mini Van"],
@@ -44,8 +44,8 @@ filled=True, rounded=True,impurity=False
 )
 
  
-
-graph = pydot.graph_from_dot_data(dot_data.getValue())
+print(dot_data.getvalue())
+graph = pydot.graph_from_dot_data(dot_data.getvalue())
 
 result_extp = { }
 result_extp[1] = "Super Car"
