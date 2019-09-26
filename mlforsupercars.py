@@ -30,27 +30,27 @@ result_extp[1] = "Super Car"
 result_extp[2] = "Min Van"
  
 
-# print (result)
-# print(result_extp[result[0]])
+print (result)
+print(result_extp[result[0]])
 
  
 
-dot_data = StringIO()
-tree.export_graphviz(clf,out_file=dot_data,
-feature_names=feature_names,
-class_names=["Super Car","Mini Van"],
-filled=True, rounded=True,impurity=False
-)
+# dot_data = StringIO()
+# tree.export_graphviz(clf,out_file=dot_data,
+# feature_names=feature_names,
+# class_names=["Super Car","Mini Van"],
+# filled=True, rounded=True,impurity=False
+# )
 
  
-# print(dot_data.getvalue())
-graph = pydot.graph_from_dot_data(dot_data.getvalue())
+# # print(dot_data.getvalue())
+# graph = pydot.graph_from_dot_data(dot_data.getvalue())
 
-result_extp = { }
-result_extp[1] = "Super Car"
-result_extp[2] = "Mini Van"
+# result_extp = { }
+# result_extp[1] = "Super Car"
+# result_extp[2] = "Mini Van"
  
 
 
-graph[0].write_pdf("iris.pdf")
-
+# graph[0].write_pdf("iris.pdf")
+# #

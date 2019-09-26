@@ -11,10 +11,11 @@ labels = [0,0,1,1]
 
 # Decision Tree Classifier 
 clf = tree.DecisionTreeClassifier()
+
 # Find Pattens in Data FIT 
 clf.fit(features,labels)
 
-result = (clf.predict([[110,1]]))
+result = (clf.predict([[1,1]]))
 
 result_extp = { }
 result_extp[0] = "Orange"
