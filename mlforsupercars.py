@@ -34,16 +34,18 @@ print(result_extp[result[0]])
 
 from sklearn.externals.six import StringIO
 import pydot
+import cStringIO
 
-dot_data = StringIO()
+dot_data = cStringIO()
 tree.export_graphviz(clf,out_file=dot_data,
 feature_names=feature_names,
 class_names=["Super Car","Mini Van"],
 filled=True, rounded=True,impurity=False
 )
 
+ 
 
-graph = pydot. graph_from_dot_data(dot_data.getValue())
+graph = pydot.graph_from_dot_data(dot_data.getValue())
 
 result_extp = { }
 result_extp[1] = "Super Car"
