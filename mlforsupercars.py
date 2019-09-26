@@ -1,5 +1,4 @@
 from sklearn import tree
-from sklearn.tree import export_graphviz
 from sklearn.externals.six import StringIO  
 import pydot
 
@@ -32,7 +31,7 @@ result_extp[2] = "Min Van"
  
 
 # print (result)
-print(result_extp[result[0]])
+# print(result_extp[result[0]])
 
  
 
@@ -53,5 +52,5 @@ result_extp[2] = "Mini Van"
  
 
 
-graph.writepdf("mover.pdf")
+graph[0].write_pdf("iris.pdf")
 
