@@ -9,9 +9,8 @@ features = [
 ]
 
 # change supercar for 1 and minivan for 2
-labels = [
-    [1,1,2,2] 
-]
+labels = [1,1,2,2] 
+
 
 
 # Decision Tree Classifier 
@@ -26,9 +25,7 @@ clf.fit(features,labels)
 result_extp = { }
 result_extp[1] = "Super Car"
 result_extp[2] = "Mini Van"
-
-clf = tree.DecisionTreeClassifier()
-
+ 
 
 
 
