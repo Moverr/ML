@@ -1,5 +1,6 @@
 from sklearn import tree
 
+feature_names = ["Horse Power","# Seats"]
 # Horse Power and Seating capacity 
 features = [
     [300,2],
@@ -34,7 +35,8 @@ print(result_extp[result[0]])
 from sklearn.externals.six import StringIO
 import pydot
 
-
+dot_data = StringIO()
+tree.export_graphviz(clf,out_file=dot_data,feature_names=feature_names)
 
 
 
