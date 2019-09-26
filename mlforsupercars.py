@@ -19,6 +19,13 @@ clf = tree.DecisionTreeClassifier()
 # Find Pattens in Data FIT 
 clf.fit(features,labels)
 
+result = (clf.predict([[110,1]]))
+
+
+# print (result)
+print(result_extp[result[0]])
+
+
 
 
 
