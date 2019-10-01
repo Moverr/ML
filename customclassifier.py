@@ -4,7 +4,7 @@ class ScarppyKNN():
         self.x_train = x_train
         self.y_train = y_train
         
-    def predict():
+    def predict(self,x_test):
         pass
 
 
