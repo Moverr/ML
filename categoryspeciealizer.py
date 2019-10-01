@@ -25,6 +25,12 @@ def percentileviewership(records):
 
 def main(): 
     #  we need to categorize data 
+    features = ["Category","Views"]
+    labels = {}
+    labels[1] = "Politics"
+    labels[2] = "Sports"
+     
+
     dataset= [  [2,1], [1,1], [1,1], [1,1] ]    
     cleaned_data = clean_data(dataset)
     result =   percentileviewership(cleaned_data) 
