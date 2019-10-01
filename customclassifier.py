@@ -8,7 +8,7 @@ class ScarppyKNN():
     def predict(self,x_test):
         predictions = []
         for row in x_test:
-            label = random.choic(self.y_train)
+            label = random.choice(self.y_train)
             predictions.append(label)
         return predictions
 
