@@ -33,8 +33,7 @@ print(x)
 print(olddata)
 def clean_data(sample_data):
     record = {}
-    first_record = sample_data[0]
-    # get the view count 
+    first_record = sample_data[0] 
     for x,y in sample_data:
         count = 1
         for keys in record.keys():
