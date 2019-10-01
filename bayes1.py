@@ -6,10 +6,11 @@
 
 import pandas  
 url =  "loan-defaulters.csv"
-names =  ["D1","D2","D3","D4","D5","D6","D7","D8","D9","d10","d11"]
+names =  ["D1","D2","D3"]
 # always describe names against the column dataset 
 dataset = pandas.read_csv(url, names=names)
 
-
+# Dataset is quite important 
+print(dataset)
 
 # todo import data from samples 
