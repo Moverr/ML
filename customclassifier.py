@@ -52,6 +52,9 @@ my_classifier = ScarppyKNN()
 
 my_classifier.fit(x_train,y_train)
 
+print("Predictions :::::::::::::::::: ")
+print(x_train)
+print(x_test)
 predictions = my_classifier.predict(x_test)
 
 print(predictions)
