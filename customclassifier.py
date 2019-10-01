@@ -1,6 +1,9 @@
+#  model is the prototype 
 class ScarppyKNN():
     def fit(self,x_train,y_train):
-        pass 
+        self.x_train = x_train
+        self.y_train = y_train
+        
     def predict():
         pass
 
