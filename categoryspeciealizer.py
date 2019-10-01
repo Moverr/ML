@@ -14,8 +14,7 @@ first_record = olddata[0]
 for x,y in olddata:
     count = 1
     for keys in d.keys():
-        if(keys == x):
-            print("Pass")
+        if(keys == x):            
             count = d[keys] + 1
     d[x] = count
 
