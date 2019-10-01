@@ -49,9 +49,8 @@ def percentileviewership(records):
     total_sum = sum(d.values())
     for keys in d.keys():
         percentile = float(d[keys]) /float(total_sum) * 100 
-        x[keys] = percentile
-        
-     return x
+        x[keys] = percentile        
+    return x
 
 
 def main():
