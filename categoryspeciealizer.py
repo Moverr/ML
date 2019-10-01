@@ -26,13 +26,11 @@ total_sum = sum(d.values())
  
 for keys in d.keys():
     
-    percentile = float(d[keys]) /float(total_sum) * 100
-    print("-----------------------------------")
-    print(percentile)
-    # x[keys] = (d[keys]/total_sum) * 100
+    percentile = float(d[keys]) /float(total_sum) * 100 
+    x[keys] = percentile
 
-# print(x)
-# print(olddata)
+print(x)
+print(olddata)
 def bayern_probabilyt():
     pass
 
