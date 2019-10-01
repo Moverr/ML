@@ -21,10 +21,12 @@ for x,y in olddata:
 
 # todo: loop through and get the probability list of viewership vs category 
 x = {}
+total_sum = d.values()
 for keys in d.keys():
-    pass
+    print(d[keys])
+    # x[keys] = (d[keys]/total_sum) * 100
 
-print(d)
+print(x)
 print(olddata)
 def bayern_probabilyt():
     pass
