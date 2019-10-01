@@ -54,8 +54,10 @@ def percentileviewership(records):
 
 
 def main():
-    print("Entry point ")
-
-
+  
+    cleaned_data = clean_data(olddata)
+    result =   percentileviewership(clean_data) 
+    print(result)
+ 
 main()
 
