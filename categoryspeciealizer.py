@@ -24,6 +24,8 @@ x = {}
 total_sum = d.values()
 for keys in d.keys():
     print(d[keys])
+    percentile = d[keys] /total_sum
+    print(percentile)
     # x[keys] = (d[keys]/total_sum) * 100
 
 print(x)
