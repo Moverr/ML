@@ -33,7 +33,7 @@ def main():
     dataset= [  [2,1], [1,1], [1,1], [1,1] ]    
     cleaned_data = clean_data(dataset)
     result =   percentileviewership(cleaned_data,labels) 
-    print("Debugging :: ")
+    print("Result :: ")
     print(result)
  
 main()
