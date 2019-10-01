@@ -14,3 +14,11 @@ dataset = pandas.read_csv(url, names=names)
 print(dataset)
 
 # todo import data from samples 
+
+import numpy as np
+data_coin_flips = np.random.randint(2, size=1000)
+
+result = np.mean(data_coin_flips)
+
+print("-------------------------------------")
+print(result)
