@@ -14,12 +14,12 @@ def clean_data(sample_data):
     return records
 
  
-def percentileviewership(records):
+def percentileviewership(records,labels):
     x = {}
     total_sum = sum(records.values())
     for keys in records.keys():
         percentile = float(records[keys]) /float(total_sum) * 100 
-        x[keys] = percentile        
+        x[labels[keys]] = percentile        
     return x
 
 
@@ -28,12 +28,11 @@ def main():
     features = ["Category","Views"]
     labels = {}
     labels[1] = "Politics"
-    labels[2] = "Sports"
-     
+    labels[2] = "Sports"    
 
     dataset= [  [2,1], [1,1], [1,1], [1,1] ]    
     cleaned_data = clean_data(dataset)
-    result =   percentileviewership(cleaned_data) 
+    result =   percentileviewership(cleaned_data,labels) 
     print("Debugging :: ")
     print(result)
  
