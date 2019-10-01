@@ -1,7 +1,7 @@
 
-from feature import ContinuousFeature
-from feature import DiscreteFeature
-from naive_bayes import NaiveBayes
+# from feature import ContinuousFeature
+# from feature import DiscreteFeature
+# from naive_bayes import NaiveBayes
 
 
 import pandas  
