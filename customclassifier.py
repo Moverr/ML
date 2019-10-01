@@ -5,7 +5,12 @@ class ScarppyKNN():
         self.y_train = y_train
         
     def predict(self,x_test):
-        pass
+        predictions = []
+        for row in x_test:
+            pass
+
+        return predictions
+
 
 
 from sklearn import datasets
