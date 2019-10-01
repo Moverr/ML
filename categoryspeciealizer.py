@@ -15,13 +15,10 @@ first_record = olddata[0]
  
 for x,y in olddata:
     count = 0
+    print(count)
+
     
-    if(len(d) > 0 ):
-        for z in d.keys():
-            if(z == x):
-                count = d[z] + 1
-    else:
-        count = 1
+     
                  
     d[x] = count
 
