@@ -1,5 +1,6 @@
 #  model is the prototype 
 import random 
+from scipy.spatial import distance
 class ScarppyKNN():
     def fit(self,x_train,y_train):
         self.x_train = x_train
