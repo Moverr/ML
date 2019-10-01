@@ -2,7 +2,7 @@
 
 #  we need to categorize data 
 olddata= [
-    [1,1],
+    
     [2,1],
     [1,1],
     [1,1],
@@ -18,6 +18,7 @@ for x,y in olddata:
     for keys in d.keys():
         if(keys == x):
             print("Pass")
+            count = d[keys] + 1
     d[x] = count
 
 
