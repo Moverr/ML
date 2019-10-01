@@ -11,6 +11,7 @@ olddata= [
 d = {}
 first_record = olddata[0]
 
+# get the view count 
 for x,y in olddata:
     count = 1
     for keys in d.keys():
@@ -18,6 +19,10 @@ for x,y in olddata:
             count = d[keys] + 1
     d[x] = count
 
+# todo: loop through and get the probability list of viewership vs category 
+x = {}
+for keys in d.keys():
+    pass
 
 print(d)
 print(olddata)
