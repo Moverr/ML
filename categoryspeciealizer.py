@@ -12,15 +12,13 @@ olddata= [
 
 d = {}
 first_record = olddata[0]
- 
-for x,y in olddata:
-    count = 0
-    print(count)
 
-    
-     
-                 
-    d[x] = count
+for x,y in olddata:
+    for keys in d.keys():
+        if(keys == x):
+            print("Pass")
+    d[x] = 1
+
 
 print(d)
 print(olddata)
