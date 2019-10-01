@@ -11,18 +11,19 @@ olddata= [
     ]
 
 d = {}
+first_record = olddata[0];
+print(olddata[0])
 for x,y in olddata:
     count = 0
+    
     if(len(d) > 0 ):
         for z in d.keys():
             if(z == x):
                 count = d[z] + 1
     else:
         count = 1
-                
-    print("COUNT : ")
-    print(count)
-    d[x] = y
+                 
+    d[x] = count
 
 print(d)
 print(olddata)
