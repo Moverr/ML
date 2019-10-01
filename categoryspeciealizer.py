@@ -2,12 +2,10 @@
 
 #  we need to categorize data 
 olddata= [
-    
     [2,1],
     [1,1],
     [1,1],
     [1,1]
-    
     ]
 
 d = {}
