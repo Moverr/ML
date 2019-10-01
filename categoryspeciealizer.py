@@ -10,6 +10,8 @@ olddata= [
     
     ]
 
+for(i in olddata):
+    print(i)
 print(olddata)
 def bayern_probabilyt():
     pass
