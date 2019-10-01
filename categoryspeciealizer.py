@@ -31,6 +31,7 @@ for keys in d.keys():
 
 print(x)
 print(olddata)
+
 def clean_data(sample_data):
     record = {}
     first_record = sample_data[0] 
