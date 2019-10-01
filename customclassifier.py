@@ -13,10 +13,11 @@ class ScarppyKNN():
     def predict(self,x_test):
         predictions = []
         for row in x_test:
-            label = random.choice(self.y_train)
+            label = self.closest(self,row)
             predictions.append(label)
         return predictions
-
+def closest(self,row):
+    pass
 
 
 from sklearn import datasets
