@@ -1,4 +1,5 @@
 #  model is the prototype 
+import random 
 class ScarppyKNN():
     def fit(self,x_train,y_train):
         self.x_train = x_train
@@ -7,8 +8,8 @@ class ScarppyKNN():
     def predict(self,x_test):
         predictions = []
         for row in x_test:
-            pass
-
+            label = random.choic(self.y_train)
+            predictions.append(label)
         return predictions
 
 
