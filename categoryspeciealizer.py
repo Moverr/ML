@@ -33,18 +33,25 @@ print(x)
 print(olddata)
 
 def clean_data(sample_data):
-    record = {}
+    records = {}
     first_record = sample_data[0] 
     for x,y in sample_data:
         count = 1
-        for keys in record.keys():
+        for keys in records.keys():
             if(keys == x):            
-                count = record[keys] + 1
-        record[x] = count
+                count = records[keys] + 1
+        records[x] = count
+    return records
 
  
-def bayern_probabilyt():
-    pass
+def percentileviewership(records):
+    x = {}
+    total_sum = sum(d.values())
+    for keys in d.keys():
+        percentile = float(d[keys]) /float(total_sum) * 100 
+        x[keys] = percentile
+        
+     return x
 
 
 def main():
