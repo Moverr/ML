@@ -3,7 +3,7 @@ import random
 from scipy.spatial import distance
 
 def euc(a,b):
-    pass 
+    return distance.euclidean(a,b) 
 
 class ScarppyKNN():
     def fit(self,x_train,y_train):
