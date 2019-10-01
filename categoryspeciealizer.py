@@ -57,6 +57,7 @@ def main():
   
     cleaned_data = clean_data(olddata)
     result =   percentileviewership(clean_data) 
+    print("Debugging :: ")
     print(result)
  
 main()
