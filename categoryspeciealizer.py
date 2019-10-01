@@ -11,8 +11,8 @@ olddata= [
     ]
 
 d = {}
-first_record = olddata[0];
-print(olddata[0])
+first_record = olddata[0]
+ 
 for x,y in olddata:
     count = 0
     
