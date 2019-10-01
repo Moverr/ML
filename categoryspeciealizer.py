@@ -1,12 +1,5 @@
 # get the most likely category  to be used  git stat
 
-#  we need to categorize data 
-olddata= [
-    [2,1],
-    [1,1],
-    [1,1],
-    [1,1]
-    ]
 
  
 def clean_data(sample_data):
@@ -23,17 +16,18 @@ def clean_data(sample_data):
  
 def percentileviewership(records):
     x = {}
-    total_sum = sum(d.values())
-    for keys in d.keys():
-        percentile = float(d[keys]) /float(total_sum) * 100 
+    total_sum = sum(records.values())
+    for keys in records.keys():
+        percentile = float(records[keys]) /float(total_sum) * 100 
         x[keys] = percentile        
     return x
 
 
-def main():
-  
-    cleaned_data = clean_data(olddata)
-    result =   percentileviewership(clean_data) 
+def main(): 
+    #  we need to categorize data 
+    dataset= [  [2,1], [1,1], [1,1], [1,1] ]    
+    cleaned_data = clean_data(dataset)
+    result =   percentileviewership(cleaned_data) 
     print("Debugging :: ")
     print(result)
  
