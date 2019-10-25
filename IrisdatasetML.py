@@ -13,3 +13,4 @@ print("  Shape of Data {} \n ".format(irisDataset['data'].shape))
 print("----------------------First FIve Columns of Data -----------------------------")
 print("  First five columns  of Data {} \n ".format(irisDataset['data'][:5]))
 
+print("Spliting Data into 2 ")
