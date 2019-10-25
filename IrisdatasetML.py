@@ -4,4 +4,4 @@ irisDataset = load_iris()
 
 print("The Iris Dataset {}".format(irisDataset.keys()))
 print("---------------------------------------------------")
-print("  XXX {} \n ".format(irisDataset['target_names']))
+print("  XXX {} \n ".format(type(irisDataset['data'])))
