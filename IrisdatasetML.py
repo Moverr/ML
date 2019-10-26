@@ -26,3 +26,11 @@ print("Y TRAIN SHAPE {} ".format(y_train.shape))
 
 print("X TEST SHAPE {} ".format(x_test.shape))
 print("Y TEST SHAPE {} ".format(y_test.shape))
+
+
+print("SOme Plotting NEeded  in Pandas")
+
+import pandas as pd 
+iris_dataFrame  =  pd.DataFrame(x_train,columns=irisDataset.feature_names)
+
+print("intersting \n {}".format(iris_dataFrame))
