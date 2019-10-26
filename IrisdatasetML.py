@@ -33,4 +33,4 @@ print("SOme Plotting NEeded  in Pandas")
 import pandas as pd 
 iris_dataFrame  =  pd.DataFrame(x_train,columns=irisDataset.feature_names)
 
-print("intersting \n {}".format(iris_dataFrame))
+print("intersting \n {}".format(iris_dataFrame[:5]))
