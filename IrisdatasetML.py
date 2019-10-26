@@ -15,5 +15,11 @@ print("  First five columns  of Data {} \n ".format(irisDataset['data'][:5]))
 
 print("Spliting Data into 2 ")
 
+print("Target : {} ".format(irisDataset['target']))
 from sklearn.model_selection import train_test_split
-x_train, x_test, y_train, y_train = train_test_split(irisDataset['data'],irisDataset['target'],random_state = 0)
+x_train, x_test, y_train, y_test = train_test_split(irisDataset['data'],irisDataset['target'],random_state = 0)
+
+
+print("Train Data")
+print("X TRAIN SHAPE {} ".format(x_train.shape))
+print("Y TRAIN SHAPE {} ".format(y_train.shape))
