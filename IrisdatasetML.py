@@ -23,3 +23,6 @@ x_train, x_test, y_train, y_test = train_test_split(irisDataset['data'],irisData
 print("Train Data")
 print("X TRAIN SHAPE {} ".format(x_train.shape))
 print("Y TRAIN SHAPE {} ".format(y_train.shape))
+
+print("X TEST SHAPE {} ".format(x_test.shape))
+print("Y TEST SHAPE {} ".format(y_test.shape))
