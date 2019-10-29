@@ -47,6 +47,7 @@ grr = smt(iris_dataFrame, c=y_train,figsize=(15,15),marker='o',hist_kwds={'bins'
 from sklearn.neighbors  import KNeighborsClassifier
 knn = KNeighborsClassifier(n_neighbors = 1)
 
+import numpy as np
 
 print("{}".format(x_train[:5]))
 knn.fit(x_train[:5],y_train[:5])
