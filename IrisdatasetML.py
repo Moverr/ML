@@ -36,7 +36,8 @@ iris_dataFrame  =  pd.DataFrame(x_train,columns=irisDataset.feature_names)
 print("intersting \n {}".format(iris_dataFrame[:5]))
 from pandas.plotting import scatter_matrix as smt
 import mglearn
+import matplotlib.pyplot as plt
 
 grr = smt(iris_dataFrame, c=y_train,figsize=(15,15),marker='o',hist_kwds={'bins':20},s=60,alpha=.8,cmap=mglearn.cm3)
 
-print("Quite Interesting \n {}".format(grr))
+plt.show()
