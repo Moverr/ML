@@ -50,3 +50,9 @@ knn = KNeighborsClassifier(n_neighbors = 1)
 
 print("{}".format(x_train[:5]))
 knn.fit(x_train[:5],y_train[:5])
+
+print("{}".format(knn))
+
+print("KNNN prediction ::")
+x_new = np.array([[5,2.9,1,0.2]])
+print("X_new.shpare {}".format(x_new.shape))
