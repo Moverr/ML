@@ -40,4 +40,6 @@ import matplotlib.pyplot as plt
 
 grr = smt(iris_dataFrame, c=y_train,figsize=(15,15),marker='o',hist_kwds={'bins':20},s=60,alpha=.8,cmap=mglearn.cm3)
 
-plt.show()
+# Show the classifier  and move on  
+# plt.show()
+
