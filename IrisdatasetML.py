@@ -43,3 +43,5 @@ grr = smt(iris_dataFrame, c=y_train,figsize=(15,15),marker='o',hist_kwds={'bins'
 # Show the classifier  and move on  
 # plt.show()
 
+# using the k-nearest neighborhood .. what is the difference btn and bayes 
+
