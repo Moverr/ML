@@ -44,4 +44,5 @@ grr = smt(iris_dataFrame, c=y_train,figsize=(15,15),marker='o',hist_kwds={'bins'
 # plt.show()
 
 # using the k-nearest neighborhood .. what is the difference btn and bayes 
-
+from sklearn.neighbors  import KNeighborsClassifier
+knn = KNeighborsClassifier(n_neighbors = 1)
