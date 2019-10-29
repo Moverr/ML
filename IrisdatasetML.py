@@ -38,3 +38,5 @@ from pandas.plotting import scatter_matrix as smt
 import mglearn
 
 grr = smt(iris_dataFrame, c=y_train,figsize=(15,15),marker='o',hist_kwds={'bins':20},s=60,alpha=.8,cmap=mglearn.cm3)
+
+print("Quite Interesting \n {}".format(grr))
