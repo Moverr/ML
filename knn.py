@@ -14,4 +14,7 @@ data = {
 }
 
 
+data_pandas = pd.DataFrame(data)
+
+print(data_pandas)
 # from sklearn.nieghbors import train_test_split
