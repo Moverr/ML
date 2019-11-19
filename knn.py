@@ -18,7 +18,10 @@ data_pandas = pd.DataFrame(data)
 
 print(" ****************************88 \n ")
 
-print(data_pandas.iloc[0])
-print(data_pandas.loc[0])
+print(data_pandas.Name)
+print(data_pandas.Location)
+print(data_pandas.Age)
+
+# print(data_pandas.loc[0])
 
 # from sklearn.nieghbors import train_test_split
