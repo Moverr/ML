@@ -1,3 +1,5 @@
+# upgrading a package 
+# pip3 install --upgrade pandas --user
 import numpy as np
 
 print("NUMPY {}".format(np.__version__))
