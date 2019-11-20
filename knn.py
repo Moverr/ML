@@ -7,7 +7,7 @@ import scipy as sc
 import pandas as pd 
 
 from sklearn.datasets import load_iris
-from sklean.model_selection import train_test_split
+from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 print("Interesting Pass")
 
