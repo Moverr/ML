@@ -22,7 +22,7 @@ print(data_pandas.Name)
 print(data_pandas.Location)
 print(data_pandas.Age)
 
-print("Different  ..............................")
-# print(data_pandas.loc[0])
+print("Different  ..............................\n")
+print(data_pandas.loc[1])
 
 # from sklearn.nieghbors import train_test_split
