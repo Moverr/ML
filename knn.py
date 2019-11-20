@@ -32,6 +32,9 @@ print("Prediction {} ".format(prediction))
 print("Predicted Target Name : {}".format(iris_dataset['target_names'][prediction]))
 
 
+y_predict = knn.predict(X_test)
+
+print("Test Set Predictions:\n {} ".format(y_predict))
 
 # print("PANDA {}".format(pd.__version__))
 
