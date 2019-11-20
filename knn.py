@@ -17,10 +17,13 @@ X_train, X_test, y_train, y_test = train_test_split(iris_dataset['data'], iris_d
 
 knn  = KNeighborsClassifier(n_neighbors = 1)
 
-x_new = np.array([[5,2.9,0.2]])
+
 knn.fit(X_train,y_train)
 print("pass {} ".format(knn))
- 
+
+x_new = np.array([[5,2.9,0.2]])
+
+print("Shape {}".format(x_new.shape))
 
 
 
