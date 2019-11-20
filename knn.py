@@ -29,6 +29,8 @@ print("Shape {}".format(x_new.shape))
 prediction = knn.predict(x_new)
 
 print("Prediction {} ".format(prediction))
+print("Predicted Target Name : {}".format(iris_dataset['target_names'][prediction]))
+
 
 
 # print("PANDA {}".format(pd.__version__))
