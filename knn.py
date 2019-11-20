@@ -9,7 +9,11 @@ import pandas as pd
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
-print("Interesting Pass")
+
+X_train, X_test, y_train, y_test = train_test_split(iris_dataset['data'], iris_dataset['target'], random_state=0)
+
+print("Training Data {} ".format(X_train))
+
 
 
 # print("PANDA {}".format(pd.__version__))
