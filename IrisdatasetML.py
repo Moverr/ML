@@ -56,6 +56,7 @@ print("{}".format(knn))
 
 print("KNNN prediction ::")
 x_new = np.array([[5,2.9,1,0.2]])
+
 print("X_new.shpare {}".format(x_new.shape))
 prediction  = knn.predict(x_new)
 print("Prediction {} ".format(prediction))
