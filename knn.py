@@ -15,7 +15,9 @@ iris_dataset = load_iris()
 
 X_train, X_test, y_train, y_test = train_test_split(iris_dataset['data'], iris_dataset['target'], random_state=0)
 
-print("Training Data {} ".format(X_train))
+knn  = KNeighborsClassifier(n_neighbors = 1)
+print("pass")
+ 
 
 
 
