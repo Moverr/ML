@@ -37,7 +37,7 @@ y_predict = knn.predict(X_test)
 print("Test Set Predictions:\n {} ".format(y_predict))
 
 
-print("Test Score: {:.2f}".format(np.mean(y_predict == X_test)))
+print("Test Score: {:.2f}".format(np.mean(y_predict == y_test)))
 # print("PANDA {}".format(pd.__version__))
 
 # data = {
