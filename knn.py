@@ -6,6 +6,7 @@ import scipy as sc
 # print("SCIPY {}".format(sc.__version__))
 import pandas as pd 
 
+from sklearn.neighbors import KNeighborsClassifier
 print("Interesting Pass")
 
 
