@@ -21,10 +21,14 @@ knn  = KNeighborsClassifier(n_neighbors = 1)
 knn.fit(X_train,y_train)
 print("pass {} ".format(knn))
 
-x_new = np.array([[5,2.9,0.2]])
+x_new = np.array([[5,2.9,1,0.2]])
 
 print("Shape {}".format(x_new.shape))
 
+# print("Training Data Dimension {} ".format(X_train.shape))
+prediction = knn.predict(x_new)
+
+print("Prediction {} ".format(prediction))
 
 
 # print("PANDA {}".format(pd.__version__))
